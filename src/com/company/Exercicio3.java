@@ -2,19 +2,17 @@ package com.company;
 
 import java.util.Scanner;
 
+
 public class Exercicio3 {
     public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
+        Scanner tecla = new Scanner(System.in);
 
-        System.out.println(
-                "Digite o serviço escolhido, 1 ou 2: "
-        );
+        System.out.println("Digite o serviço escolhido: ");
 
-        int servico = scan.nextInt();
+        int servico = tecla.nextInt();
 
         int custoServico = 0;
-
         int custoPatrulha = 700;
 
         switch (servico) {
@@ -29,6 +27,6 @@ public class Exercicio3 {
                 break;
         }
 
-        System.out.println("Valor a ser pago pelos serviços realizados: R$ " + custoServico);
+        System.out.println("VALOR FINAL a ser pago pelo serviço realizado: R$ " + custoServico);
     }
 }
